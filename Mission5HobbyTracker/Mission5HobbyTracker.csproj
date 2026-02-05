@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- Exclude long-named files that can exceed Windows path limit -->
+  <ItemGroup>
+    <Content Remove="wwwroot\images\c__*" />
+  </ItemGroup>
+
+</Project>

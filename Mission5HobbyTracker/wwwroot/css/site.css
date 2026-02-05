@@ -1,0 +1,109 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #002277;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Cougs Clothes - Light Blue / Royal Blue Theme */
+.cougs-nav {
+  background: linear-gradient(135deg, #e8f4fc 0%, #cce5ff 100%) !important;
+  border-color: #4F9CF9 !important;
+}
+
+.cougs-hero h1 {
+  color: #002277;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.cougs-content {
+  color: #2c3e50;
+  line-height: 1.8;
+}
+
+/* Image containers - preserve aspect ratio */
+.cougs-img-wrapper {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.cougs-img-wrapper.cougs-img-portrait {
+  max-width: 100%;
+  aspect-ratio: 3 / 4;
+}
+
+.cougs-img-wrapper.cougs-img-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.cougs-img-wrapper:not(.cougs-img-portrait) img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cougs-img {
+  border: 2px solid #cce5ff;
+}
+
+.btn-cougs {
+  background: linear-gradient(135deg, #002277 0%, #0044aa 100%);
+  border-color: #002277;
+  color: white;
+}
+
+.btn-cougs:hover {
+  background: linear-gradient(135deg, #001a55 0%, #002277 100%);
+  border-color: #001a55;
+  color: white;
+}
+
+.btn-outline-cougs {
+  border-color: #002277;
+  color: #002277;
+}
+
+.btn-outline-cougs:hover {
+  background-color: #002277;
+  border-color: #002277;
+  color: white;
+}
+
+.cougs-calc-card {
+  max-width: 500px;
+  border: 2px solid #4F9CF9;
+  background: linear-gradient(180deg, #f8fbff 0%, #e8f4fc 100%);
+}
+
+.calculator-section h1 {
+  color: #002277;
+  font-family: Georgia, 'Times New Roman', serif;
+}
