@@ -1,22 +1,32 @@
-﻿@model ErrorViewModel
+@* Error.cshtml — Error view displayed when an unhandled exception occurs *@
+
+@* Bind this view to the ErrorViewModel class *@
+@model ErrorViewModel
 @{
-    ViewData["Title"] = "Error";
+    ViewData["Title"] = "Error"; // Set the browser tab title to "Error"
 }
 
+@* Display a red error heading to alert the user *@
 <h1 class="text-danger">Error.</h1>
+@* Display a secondary message explaining that an error occurred *@
 <h2 class="text-danger">An error occurred while processing your request.</h2>
 
+@* Conditionally show the Request ID if it has a value, for debugging purposes *@
 @if (Model.ShowRequestId)
 {
     <p>
+        @* Display the unique request identifier *@
         <strong>Request ID:</strong> <code>@Model.RequestId</code>
     </p>
 }
 
+@* Heading for development mode information *@
 <h3>Development Mode</h3>
+@* Inform developers that switching to Development environment shows more detail *@
 <p>
     Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
 </p>
+@* Security warning — Development environment should not be used in production *@
 <p>
     <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
     It can result in displaying sensitive information from exceptions to end users.

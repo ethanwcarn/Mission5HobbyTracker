@@ -1,62 +1,78 @@
+/* site.css — Custom styles for the Cougs Clothes BYU Vintage Apparel hobby site */
+/* IS 413 Mission 5 */
+
+/* Set the base font size to 14px on smaller screens for readability */
 html {
   font-size: 14px;
 }
 
+/* Increase the base font size to 16px on medium and larger screens (768px+) */
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
 
+/* Custom focus ring styling for buttons, links, form controls, and checkboxes — uses BYU royal blue */
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #002277;
 }
 
+/* Ensure the html element takes at least the full viewport height for sticky footer positioning */
 html {
   position: relative;
   min-height: 100%;
 }
 
+/* Add bottom margin to body so content doesn't overlap with the fixed-position footer */
 body {
   margin-bottom: 60px;
 }
 
+/* Style placeholder text in floating form controls — right-aligned and using secondary color */
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
   text-align: end;
 }
 
+/* When a floating form control is focused, switch placeholder text alignment to start (left) */
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
 
-/* Cougs Clothes - Light Blue / Royal Blue Theme */
+/* ========== Cougs Clothes Theme — Light Blue / Royal Blue Color Scheme ========== */
+
+/* Navbar gradient background — light blue gradient to match BYU brand with blue bottom border */
 .cougs-nav {
   background: linear-gradient(135deg, #e8f4fc 0%, #cce5ff 100%) !important;
   border-color: #4F9CF9 !important;
 }
 
+/* Hero section heading — BYU royal blue color with classic serif font */
 .cougs-hero h1 {
   color: #002277;
   font-family: Georgia, 'Times New Roman', serif;
 }
 
+/* Content text styling — dark readable color with generous line height for paragraphs */
 .cougs-content {
   color: #2c3e50;
   line-height: 1.8;
 }
 
-/* Image containers - preserve aspect ratio */
+/* Image wrapper — clips overflow and rounds corners for a clean card-like look */
 .cougs-img-wrapper {
   overflow: hidden;
   border-radius: 0.5rem;
 }
 
+/* Portrait image wrapper — enforces a 3:4 aspect ratio for tall images */
 .cougs-img-wrapper.cougs-img-portrait {
   max-width: 100%;
   aspect-ratio: 3 / 4;
 }
 
+/* Portrait images fill their wrapper completely, cropped from the top center */
 .cougs-img-wrapper.cougs-img-portrait img {
   width: 100%;
   height: 100%;
@@ -64,45 +80,53 @@ body {
   object-position: center top;
 }
 
+/* Non-portrait images — scale to full width while maintaining natural aspect ratio */
 .cougs-img-wrapper:not(.cougs-img-portrait) img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Subtle light blue border around all hobby images */
 .cougs-img {
   border: 2px solid #cce5ff;
 }
 
+/* Primary action button — dark blue gradient matching BYU brand colors */
 .btn-cougs {
   background: linear-gradient(135deg, #002277 0%, #0044aa 100%);
   border-color: #002277;
   color: white;
 }
 
+/* Primary button hover state — darker gradient for visual feedback */
 .btn-cougs:hover {
   background: linear-gradient(135deg, #001a55 0%, #002277 100%);
   border-color: #001a55;
   color: white;
 }
 
+/* Outline button style — blue border and text on white background */
 .btn-outline-cougs {
   border-color: #002277;
   color: #002277;
 }
 
+/* Outline button hover state — fills with blue background and switches text to white */
 .btn-outline-cougs:hover {
   background-color: #002277;
   border-color: #002277;
   color: white;
 }
 
+/* Calculator card styling — max width, blue accent border, soft blue gradient background */
 .cougs-calc-card {
   max-width: 500px;
   border: 2px solid #4F9CF9;
   background: linear-gradient(180deg, #f8fbff 0%, #e8f4fc 100%);
 }
 
+/* Calculator page heading — BYU royal blue with serif font to match the hero heading */
 .calculator-section h1 {
   color: #002277;
   font-family: Georgia, 'Times New Roman', serif;

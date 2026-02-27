@@ -1,44 +1,54 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+/* _Layout.cshtml.css — Scoped CSS styles applied specifically to the shared _Layout.cshtml view */
+/* For details on CSS isolation, see: https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification */
 
+/* Navbar brand text — allow wrapping, center-align, and break long words if needed */
 a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 
+/* Default link color — blue for standard anchor elements */
 a {
   color: #0077cc;
 }
 
+/* Primary button override — custom blue background and border for Bootstrap .btn-primary */
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
+/* Active pill navigation tab — custom blue background matching primary button style */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
+/* Top border utility — light gray 1px solid line used by footer and other dividers */
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
+
+/* Bottom border utility — light gray 1px solid line used by header/navbar */
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
 
+/* Subtle box shadow utility — adds a light shadow beneath the navbar */
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
+/* Cookie consent accept button — standard font size inheriting line-height */
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
 }
 
+/* Footer positioning — absolute bottom, full width, fixed 60px height for sticky footer effect */
 .footer {
   position: absolute;
   bottom: 0;

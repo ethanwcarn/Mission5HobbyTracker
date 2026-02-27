@@ -1,22 +1,27 @@
+@* Index.cshtml — Homepage view for the Cougs Clothes BYU vintage apparel hobby site *@
 @{
-    ViewData["Title"] = "BYU Vintage Style";
+    ViewData["Title"] = "BYU Vintage Style"; // Set the browser tab title for this page
 }
 
+@* Hero section — centered heading and subtitle introducing the site *@
 <div class="cougs-hero text-center py-5">
-    <h1 class="display-4 mb-4">Discover BYU Vintage Style</h1>
-    <p class="lead text-muted">Your guide to classic Cougars apparel and timeless college fashion</p>
+    <h1 class="display-4 mb-4">Discover BYU Vintage Style</h1> @* Main heading introducing the hobby *@
+    <p class="lead text-muted">Your guide to classic Cougars apparel and timeless college fashion</p> @* Subtitle describing the site purpose *@
 </div>
 
+@* Two-column image row — displays two images of BYU vintage apparel *@
 <div class="row mb-5">
-    <div class="col-md-6 mb-4">
-        <div class="cougs-img-wrapper cougs-img-portrait">
+    <div class="col-md-6 mb-4"> @* Left column — first image (portrait orientation) *@
+        <div class="cougs-img-wrapper cougs-img-portrait"> @* Image wrapper with portrait aspect ratio *@
+            @* First image — vintage BYU t-shirt back design *@
             <img src="~/images/VintageCrewBack_1200x.webp" 
                  alt="Vintage BYU Brigham Young Cougars t-shirt with classic design" 
                  class="rounded shadow cougs-img" asp-append-version="true" />
         </div>
     </div>
-    <div class="col-md-6 mb-4">
-        <div class="cougs-img-wrapper">
+    <div class="col-md-6 mb-4"> @* Right column — second image *@
+        <div class="cougs-img-wrapper"> @* Image wrapper with default aspect ratio *@
+            @* Second image — vintage BYU cougar graphic hoodie *@
             <img src="~/images/byu-vintage-cougar-graphic-hoodie.webp" 
                  alt="BYU Vintage Cougar Graphic Hoodie" 
                  class="rounded shadow cougs-img" asp-append-version="true" />
@@ -24,18 +29,22 @@
     </div>
 </div>
 
+@* Content section — paragraphs describing the BYU vintage apparel collecting hobby *@
 <div class="cougs-content">
+    @* Paragraph 1 — introduces the hobby and what makes it special *@
     <p class="mb-4">
         BYU vintage apparel collecting is more than a hobby—it's a journey through Cougars history. Each piece tells a story, 
         from classic Sailor Cougar tees to retro letterman styles. Whether you're hunting for that perfect throwback hoodie 
         or a vintage tri-blend tee, BYU vintage fashion offers unique styles that honor the tradition of Cougar nation.
     </p>
+    @* Paragraph 2 — describes the experience of hunting for vintage items *@
     <p class="mb-4">
         The thrill of the hunt is real. Scouring thrift stores, campus sales, and vintage shops in search of hidden BYU gems 
         builds both your collection and your eye for quality. Learning to spot authentic vintage Cougars logos, 
         recognize quality construction, and identify classic designs transforms casual shopping into a rewarding skill. 
         Before you know it, you'll be the one friends call when they need advice on dating a garment or finding that rare piece.
     </p>
+    @* Paragraph 3 — highlights the sustainability aspect of the hobby *@
     <p class="mb-4">
         Sustainability meets school spirit in vintage BYU fashion. By giving pre-loved Cougars apparel a second life, you're 
         reducing waste and supporting a circular economy. Plus, vintage pieces are often made with superior craftsmanship 
@@ -43,6 +52,7 @@
     </p>
 </div>
 
+@* Call-to-action button — links to the Tutoring Calculator view *@
 <div class="text-center mt-5">
-    <a asp-controller="Home" asp-action="Calculator" class="btn btn-cougs btn-lg">Calculate Tutoring Cost</a>
+    <a asp-controller="Home" asp-action="Calculator" class="btn btn-cougs btn-lg">Calculate Tutoring Cost</a> @* Navigation button to Calculator page *@
 </div>

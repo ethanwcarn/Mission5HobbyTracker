@@ -1,4 +1,6 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+// site.js — Global JavaScript file loaded on every page via _Layout.cshtml
+// For details on bundling and minification, see:
+// https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 
-// Write your JavaScript code.
+// Add any site-wide JavaScript functionality here
+// Page-specific scripts (like calculator.js) are loaded via Razor @section Scripts
